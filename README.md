@@ -8,4 +8,4 @@ This project inludes a Langgraph agent that is able to:
 
 The agentic workflow can be seen below:
 
-![TENSORFLOWMODELGEN WORKFLOW](https://github.com/user-attachments/assets/9f3773ab-906d-43c8-8771-5b3662ceb99b)
+![TENSORFLOWMODELGEN WORKFLOW](https://github.com/user-attachments/assets/a72a638b-0a1c-4312-879d-80a4f72eff86)
