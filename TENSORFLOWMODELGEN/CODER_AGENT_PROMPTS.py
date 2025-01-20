@@ -1,7 +1,8 @@
 from CONFIG import DATA_DIR, SAMPLE_IM_PATH
 import glob
 import os
-directory = r"D:\fastaimodelmaker\output"
+
+directory = r"D:\\TENSORFLOWMODELGE\\output"
 py_files = glob.glob(os.path.join(directory, '**', '*.py'))
 
 # Output the list of Python files
@@ -55,12 +56,13 @@ You must be careful not to mess up the formatting, or overall code structure.
 Your job is to go into the code and find any variable that is left undefined.
 The main ones you will see are:
 data_dir = ""
-your ONLY task is to replace the "" with the correct information. For data_dir, set it to r{DATA_DIR}.
+your ONLY task is to replace the "" with the correct information. For data_dir, set it to {DATA_DIR}
 In the Sequential model section, you will see a line that says layers.Dense(num_classes). To find num_classes, use
-your inspect_data_dir tool with THIS EXACT DIRECTORY ONLY: {DATA_DIR} to find the number of classes, then replace the num_classes in layers.Dense(num_classes) with 
+your inspect_data_dir tool with THIS EXACT DIRECTORY ONLY: {DATA_DIR} then replace the num_classes in layers.Dense(num_classes) with 
 the number of classes you recieve from your inspect_data_dir tool. IGNORE ANY DIRECTORIES USED IN THE DOCUMENTATION.
 Once you have set each blank variable to the correct value, return the new, perfectly formatted script with the
 variables assigned to the correct values back to the user.
+if you want to know the image dimensions, use this sample image: {SAMPLE_IM_PATH} to inspect it use your image_inspector tool.
 """
 
 AGENT_3_SYSTEM_PROMPT = f"""
